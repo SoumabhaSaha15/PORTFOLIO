@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+*{
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Quicksand','Trebuchet MS', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: background-color 0.25s linear , color 0.25s linear;
+}
+section{
+    position: static;
+    width: 100%;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    height: 5vmax;
+    background-color: #00000040;
+}
+header h1{
+    width: calc(100% - 5vmax);
+    text-align: left;
+    padding-left: 20px;
+    background-color:transparent ;
+    font-size: x-large;
+    font-weight: 900;
+    line-height: 5vmax;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: text 1s ease;
+    box-sizing: border-box;
+    animation: changeFontFamily 4s linear infinite;
+}
+#menu{
+    border: 0 solid black;
+    float: left;
+    height: 5vmax;
+    width: 5vmax;
+    background-color: transparent;
+    display: none;
+}
+a{
+    text-decoration-line:none ;
+    text-transform: uppercase;
+    font-size:x-large;
+    color: #b570d3;
+    background-color: transparent;
+    transition: color 0.25s linear;
+}
+a:hover{
+    color: #1768ff;
+}
+#mode{
+    border: 0 solid black;
+    float: right;
+    height: 5vmax;
+    width: 5vmax;
+    display: inline-block;
+    background-color: transparent;
+}
+nav ul{
+    all:unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#00000030;
+    transition: display 0.25s linear;
+}
+nav ul li{
+    list-style: none;
+    background-color: transparent;
+}
+nav{
+    display: block;
+}
+@media only screen and (max-width:640px) {
+    #menu{
+        border: 0 solid black;
+        height: 5vmax;
+        width: 5vmax;
+        background-color: transparent;
+        display:inline-block;
+    }
+    header h1{
+        width: calc(100% - 10vmax);
+        text-align: center;
+        padding-left:0;
+        display:inline-block;
+    }
+    #mode{
+        border: 0 solid black;
+        height: 5vmax;
+        width: 5vmax;
+        background-color: transparent;
+        display: inline-block;
+    }
+    nav ul{
+        all:unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #00000030;
+        text-align: center;
+    }
+    nav ul li{
+        background-color: transparent;
+        width: 100%;
+        border-top: 1px dashed #111111;
+    }
+    nav{
+        display: none;
+    }
+    a{
+        font-size:large;
+    }
+    a:hover{
+    	color: #1768ff;
+		}
+}
+@keyframes changeFontFamily{
+    0%{
+        font-family: 'Courier New';
+        transition: all 1s linear;
+    }
+    25%{
+        font-family: 'Quicksand';
+        transition: all 1s linear;
+    }
+    50%{
+        font-family:Monospace;
+        transition: all 1s linear;
+    }
+    75%{
+      font-family: serif;
+      transition: all 1s linear;
+    }
+    100%{
+    	font-family: cursive;
+      transition: all 1s linear;
+    }
+}
+/* home canvas */
+#home canvas {
+	background-color: transparent;
+}
