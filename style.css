@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 *{
-    scroll-snap-type: mandatory;
+    scroll-snap-type:both mandatory;
     scroll-behavior: smooth;
     margin: 0;
     font-family: 'Quicksand','Trebuchet MS', sans-serif;
