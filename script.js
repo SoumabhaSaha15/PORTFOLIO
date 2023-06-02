@@ -11,7 +11,7 @@ MENU.addEventListener('click',()=>{
             NAVBAR.style.display="none";
         }
         window.addEventListener("resize",()=>{
-          if(window.innerWidth>512)
+          if(window.innerWidth>640)
             NAVBAR.style.display="block"  
         })
 })
@@ -148,3 +148,7 @@ window.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", resizeReset);
 window.addEventListener("mousemove", mousemove);
 window.addEventListener("mouseout", mouseout);
+const RH=()=>{
+	window.location.reload();
+}
+window.addEventListener('orientationchange',RH);
