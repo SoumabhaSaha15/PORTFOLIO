@@ -10,6 +10,7 @@
 section{
   position:static;
   width:100%;
+  outline: 1px dashed lightgreen;
 }
 body{
   min-height:100vh;
@@ -31,10 +32,11 @@ header h1{
   padding-left:20px;
   background-color:transparent ;
   line-height:5vmax;
+  overflow: auto;
   text-transform:uppercase;
-  transition:font-size 1s linear;
+  transition:color 1s linear;
   box-sizing:border-box;
-  animation:changeFontFamily 4s linear infinite;
+  animation:changeColor 4s linear infinite;
 }
 a{
   text-decoration-line:none;
@@ -47,7 +49,7 @@ a{
 a:hover{
   color:#1768ff;
 }
-button,h1{
+button{
   border:0 solid black;
   background-color:transparent;
 }
@@ -108,25 +110,46 @@ nav{
     color:#1768ff;
 	}
 }
-@keyframes changeFontFamily{
+@keyframes changeColor{
   0%{
-    font-family:'monotone',cursive;
-    transition:font-family 1s linear;
+    color:red;
+    transition:color 1s linear;
   }
   25%{
-    font-family:'Quicksand';
-    transition:font-family 1s linear;
+    color:green;
+    transition:color 1s linear;
   }
   50%{
-    font-family:Monospace;
-    transition:font-family 1s linear;
+    color:pink;
+    transition:color 1s linear;
   }
   75%{
-    font-family:'Times New Roman';
-    transition:font-family 1s linear;
+    color:coral;
+    transition:color 1s linear;
   }
 }
 /* home canvas */
 #home canvas{
 	background-color:transparent;
+}
+#about{
+	font-size:xx-large;
+	text-align:center;
+	min-height:100vh;
+}
+#abt{
+	border-right:2px solid red;
+	transition:border-right-color .2s linear,color .2s linear;
+	text-shadow:-2px 2px #777777,-3px 3px #777777,-4px 4px #777777;
+	animation:blink .6s ease-in infinite;
+}
+@keyframes blink{
+  from{
+    border-right-color:red;
+    color:yellow;
+  }
+  to{
+  	border-right-color:transparent;
+  	color:red;
+  }
 }
