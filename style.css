@@ -141,7 +141,7 @@ nav{
 	border-right:2px solid red;
 	transition:border-right-color .2s linear,color .2s linear;
 	text-shadow:-2px 2px #777777,-3px 3px #777777,-4px 4px #777777;
-	animation:blink .6s ease-in infinite;
+	animation:blink 0.6s ease-in infinite;
 }
 @keyframes blink{
   from{
