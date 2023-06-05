@@ -1,20 +1,60 @@
 const MENU = document.getElementById("menu");
 const NAVBAR = document.getElementById("navBar");
 const MODE = document.getElementById("mode"); 
+const TYPER = document.getElementById("typer");
+const ABOUT = document.getElementById("abt");
+const ANCHORS = [...document.querySelectorAll("a")];
+class Typewriter{
+	constructor(element,interval,loop=1){
+		this.Element = element;
+		this.Text = element.innerHTML;
+		this.Element.innerHTML = '';
+		this.Interval = interval;
+		this.Index = 0;
+		this.Loop = loop;
+		this.End=(this.Interval*this.Text.length+50)
+	}
+Print(){
+			if(this.Index<this.Text.length){
+				this.Element.innerHTML += this.Text[this.Index];
+				this.Index++;
+				if(this.Index==this.Text.length){
+					clearInterval(this.SET);
+				}
+			}
+	}
+Type(){
+		this.SET=setInterval(()=>{this.Print();},this.Interval);
+	}
+}
+const TypeEvent = new Event("Typing");
+document.addEventListener("Typing",()=>{
+		var T = new Typewriter(TYPER,100);
+		T.Type();
+		var A = new Typewriter(ABOUT,100);
+		A.Type();
+});
+setInterval(()=>{document.dispatchEvent(TypeEvent)},6000);
 MENU.addEventListener('click',()=>{
     if(MENU.classList.contains("fa-bars")){
-            MENU.classList.replace("fa-bars","fa-close");
-            NAVBAR.style.display="block";
+      MENU.classList.replace("fa-bars","fa-close");
+      NAVBAR.style.display="block";
+    }
+    else if(MENU.classList.contains("fa-close")){
+      MENU.classList.replace("fa-close","fa-bars");
+      NAVBAR.style.display="none";
+    }
+    window.addEventListener("resize",()=>{
+      if(window.innerWidth>640){
+      	MENU.classList.replace("fa-bars","fa-close");
+        NAVBAR.style.display="block";
       }
-      else if(MENU.classList.contains("fa-close")){
-            MENU.classList.replace("fa-close","fa-bars");
-            NAVBAR.style.display="none";
-        }
-        window.addEventListener("resize",()=>{
-          if(window.innerWidth>640)
-            NAVBAR.style.display="block"  
-        })
-})
+      else if(window.innerWidth<=640){
+        NAVBAR.style.display="none";
+        MENU.classList.replace("fa-close","fa-bars");
+      }
+    });
+});
 MODE.addEventListener('click',()=>{
     if(MODE.classList.contains("fa-sun")){
         MODE.classList.replace("fa-sun","fa-moon");
@@ -52,6 +92,8 @@ let rgb = [
 function init() {
 	resizeReset();
 	animationLoop();
+		var T = new Typewriter(TYPER,200);
+		T.Type();
 }
 
 function resizeReset() {
@@ -71,7 +113,6 @@ function animationLoop() {
 		}
 	}
 	balls = temp;
-
 	requestAnimationFrame(animationLoop);
 }
 
@@ -143,12 +184,12 @@ class Ball {
 		this.time++;
 	}
 }
-
 window.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", resizeReset);
 window.addEventListener("mousemove", mousemove);
 window.addEventListener("mouseout", mouseout);
-const RH=()=>{
-	window.location.reload();
+function reload(){
+  window.location.reload();
 }
-window.addEventListener('orientationchange',RH);
+window.matchMedia("(orientation: portrait)").addEventListener('change',reload);
+window.addEventListener("focus",reload);
