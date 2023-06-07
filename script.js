@@ -191,5 +191,5 @@ window.addEventListener("mouseout", mouseout);
 function reload(){
   window.location.reload();
 }
-window.matchMedia("(orientation: portrait)").addEventListener('change',reload);
+//window.matchMedia("(orientation: portrait)").addEventListener('change',reload);
 window.addEventListener("focus",reload);
