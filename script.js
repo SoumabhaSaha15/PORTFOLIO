@@ -5,36 +5,53 @@ const TYPER = document.getElementById("typer");
 const ABOUT = document.getElementById("abt");
 const ANCHORS = [...document.querySelectorAll("a")];
 class Typewriter{
-	constructor(element,interval,loop=1){
+	constructor(element,interval){
 		this.Element = element;
 		this.Text = element.innerHTML;
-		this.Element.innerHTML = '';
 		this.Interval = interval;
 		this.Index = 0;
-		this.Loop = loop;
-		this.End=(this.Interval*this.Text.length+50)
+		this.Time =(this.Text.length*this.Interval) ;
+        this.Repeatation=false;
 	}
-Print(){
+	Print(){
 			if(this.Index<this.Text.length){
 				this.Element.innerHTML += this.Text[this.Index];
 				this.Index++;
 				if(this.Index==this.Text.length){
-					clearInterval(this.SET);
+					clearInterval(this.Set);
+					this.Index=0;
 				}
 			}
 	}
-Type(){
-		this.SET=setInterval(()=>{this.Print();},this.Interval);
+	Type(){
+		this.Element.innerHTML = '';
+		this.Set=setInterval(()=>{this.Print();},this.Interval);
 	}
-}
-const TypeEvent = new Event("Typing");
-document.addEventListener("Typing",()=>{
+	RepeatType(TimeFactor=1.1){
+        this.Repeatation=true;
+		if(TimeFactor>1){
+            this.TF=TimeFactor;
+            this.Cycle=setInterval(() => {this.Type()}, this.Time*TimeFactor);
+        }
+        else{
+            this.TF=1.1;
+            this.Cycle=setInterval(() => {this.Type()}, this.Time*1.1);
+        }
+	}
+    Stop(Loop=1){
+        if (this.Repeatation){
+            setTimeout(()=>{clearInterval(this.Cycle);
+				console.log(this,"end")
+		},(Loop+1)*this.Time*this.TF);
+		this.Element.innerHTML= this.Text;
+        }
+    }
+}
 		var T = new Typewriter(TYPER,100);
-		T.Type();
+		T.RepeatType();
 		var A = new Typewriter(ABOUT,100);
-		A.Type();
-});
-setInterval(()=>{document.dispatchEvent(TypeEvent)},6000);
+		A.RepeatType();
+
 MENU.addEventListener('click',()=>{
     if(MENU.classList.contains("fa-bars")){
       MENU.classList.replace("fa-bars","fa-close");
