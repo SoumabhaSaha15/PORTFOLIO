@@ -47,9 +47,10 @@ class Typewriter{
         }
     }
 }
-		var T = new Typewriter(TYPER,100);
-		T.RepeatType(1.5);
-		var A = new Typewriter(ABOUT,100);
+		const T = new Typewriter(TYPER,120);
+		T.RepeatType(2);
+
+		const A = new Typewriter(ABOUT,100);
 		A.RepeatType(1.2);
 
 MENU.addEventListener('click',()=>{
