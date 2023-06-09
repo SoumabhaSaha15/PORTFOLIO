@@ -63,7 +63,7 @@ window.addEventListener('mousemove',function(event){
 function drawImage(){
   let imageWidth=png.width;
   let imageHeight=png.height;
-  const data=Ctx.getImageData((Canvas.width-imageWidth)/2,(Canvas.height-imageHeoght)/2,(Canvas.width+imageWidth)/2,(Canvas.height+imageHeight)/2);
+  const data=Ctx.getImageData(0,0, imageWidth,imageHeight);
   Ctx.clearRect(0,0,Canvas.width,Canvas.height);
   class Particle{
     constructor(x,y,color,size){
@@ -140,7 +140,7 @@ RS();
 }
 window.addEventListener('load',function(){
   RS();
-  Ctx.drawImage(png,(Canvas.width-png.width)/2,(Canvas.height-png.height)/2,(Canvas.width+png.width)/2,(Canvas.width+png.width)/2);
+  Ctx.drawImage(png,0,0);
   drawImage();
 }) ;
 window.addEventListener('orientationchange',function(){
