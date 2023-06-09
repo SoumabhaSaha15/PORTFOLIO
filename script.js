@@ -46,7 +46,7 @@ const Canvas = document.querySelector("#cnv");
 const Ctx = Canvas.getContext("2d");
 function RS(){
     Canvas.width=innerWidth;
-    Canvas.height=innerHeight
+    Canvas.height=innerHeight;
 }
 
 let Particles=[];
