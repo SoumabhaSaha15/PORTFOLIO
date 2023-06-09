@@ -135,7 +135,7 @@ function drawImage(){
   init();
   animate();
   window.addEventListener('resize',function(){
-    location.reload();
+RS();
   }) ;
 }
 window.addEventListener('load',function(){
@@ -144,7 +144,7 @@ window.addEventListener('load',function(){
   drawImage();
 }) ;
 window.addEventListener('orientationchange',function(){
-  location.reload();
+ RS();
 }) ;
 window.addEventListener('focus',function(){
   location.reload();
