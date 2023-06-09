@@ -88,7 +88,7 @@ function drawImage(){
       let distance = Math.sqrt((dx*dx)+(dy*dy));
       let FDX=dx/distance;
       let FDY=dy/distance;
-      const MD=400;//MD=MAX distance
+      const MD=200;//MD=MAX distance
       let force=(MD-distance)/MD;
       if(force<0)
       force=0;
@@ -119,7 +119,7 @@ function drawImage(){
           let positionX=x;
           let positionY=y;
           let color = 'rgb('+data.data[(y*4*data.width)+(x*4)]+','+data.data[(y*4*data.width)+(x*4)+1]+','+data.data[(y*4*data.width)+(x*4)+2]+')';
-          Particles.push(new Particle(2*positionX,2*positionY,color,1));
+          Particles.push(new Particle(2*positionX,2*positionY,color,2));
         }
       }
     }
