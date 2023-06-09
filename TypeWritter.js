@@ -32,7 +32,7 @@ class Typewriter{
             this.Cycle=setInterval(() => {this.Type()}, this.Time*1.1);
         }
 	}
-    Stop(Loop=1){
+        Stop(Loop=1){
         if (this.Repeatation){
             setTimeout(()=>{clearInterval(this.Cycle)},(Loop+1)*this.Time*this.TF);
 			this.Element.innerHTML= this.Text;
