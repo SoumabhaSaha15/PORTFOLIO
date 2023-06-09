@@ -39,8 +39,8 @@ class Typewriter{
         }
 	}
     Stop(Loop=1){
-        if (this.Repeatation){
-            setTimeout(()=>{clearInterval(this.Cycle);
+       if (this.Repeatation){
+        setTimeout(()=>{clearInterval(this.Cycle);
 				console.log(this,"end")
 		},(Loop+1)*this.Time*this.TF);
 		this.Element.innerHTML= this.Text;
@@ -48,9 +48,9 @@ class Typewriter{
     }
 }
 		var T = new Typewriter(TYPER,100);
-		T.RepeatType();
+		T.RepeatType(1.5);
 		var A = new Typewriter(ABOUT,100);
-		A.RepeatType();
+		A.RepeatType(1.2);
 
 MENU.addEventListener('click',()=>{
     if(MENU.classList.contains("fa-bars")){
