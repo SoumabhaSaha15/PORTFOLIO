@@ -58,7 +58,7 @@ svg text {
   stroke: #ff3333;
   stroke-width: 1.5;
   letter-spacing: 1dvw;
-  line-height: 60px;
+  line-height: 50px;
   font-size: 50px;
   font-weight: 700;
   transition: stroke-dasharray, stroke-dashoffset;
