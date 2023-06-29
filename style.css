@@ -148,7 +148,7 @@ div hr {
 div .hide {
   opacity: 0;
   transform: translateX(-100%);
-  transition: all .45s linear;
+  transition: all .45s ease-in-out;
 }
 
 div .show {
