@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 * {
   font-size: 16px;
@@ -43,6 +44,10 @@ header svg {
   width: 100%;
 }
 
+div svg {
+  border-radius: 25vh;
+}
+
 main section {
   min-height: inherit;
   min-width: 100%;
@@ -58,8 +63,8 @@ svg text {
   stroke: #ff3333;
   stroke-width: 1.5;
   letter-spacing: 1dvw;
-  line-height: 50px;
-  font-size: 50px;
+  line-height: 48px;
+  font-size: 48px;
   font-weight: 700;
   transition: stroke-dasharray, stroke-dashoffset;
   animation: textAnimate 3s ease-in-out infinite;
@@ -124,8 +129,10 @@ div p {
   text-align: left;
   font-size: 50px;
   font-weight: 900;
+  margin-top: 16px;
+  margin-bottom: 16px;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Comfortaa', 'Arial Narrow', Arial, sans-serif;
   text-transform: capitalize;
 }
 
@@ -133,6 +140,18 @@ div hr {
   width: calc(100% - 4vmax);
 }
 
-.smt {
-  font-size: 40px;
+.smaller-text {
+  font-size: 35px;
+  font-family: 'Comfortaa', serif;
+}
+
+div .hide {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all .3s linear;
+}
+
+div .show {
+  opacity: 1;
+  transform: translateX(0);
 }
