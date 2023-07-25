@@ -115,7 +115,7 @@ section div {
   margin-top: 5%;
   margin-bottom: 5%;
   min-height: 90%;
-  background-color: #303030ee;
+  background-color: #00000080;
   border-radius: 2vmax;
   display: flex;
   flex-direction: column;
