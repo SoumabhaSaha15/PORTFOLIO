@@ -155,3 +155,19 @@ div .show {
   opacity: 1;
   transform: translateX(0);
 }
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top,#5900ff,#ff00ea);
+  border-radius: 2px;
+}
