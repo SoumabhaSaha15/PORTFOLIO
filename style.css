@@ -168,6 +168,6 @@ div .show {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to top,#5900ff,#ff00ea);
+  background-image: linear-gradient(to top,#ff3333,#ff3333);
   border-radius: 2px;
 }
