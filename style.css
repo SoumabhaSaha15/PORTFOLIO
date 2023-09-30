@@ -101,7 +101,7 @@ button {
 button.btn::selection{
   outline: 0 solid red;
 }
-button.btn:hover {
+button.btn ion-icon:hover {
   color: #ff1414;
   transform: scale(1.2);
 }
