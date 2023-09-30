@@ -9,8 +9,8 @@
   font-family: 'Lobster', cursive;
 }
 body{
-  /*height: 100vh;
-  overflow: hidden;*/
+  height: 100vh;
+  /*overflow: hidden;*/
 }
 main {
   width: 100%;
