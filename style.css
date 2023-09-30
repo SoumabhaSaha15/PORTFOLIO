@@ -8,7 +8,10 @@
   font-weight: 700;
   font-family: 'Lobster', cursive;
 }
-
+body{
+  height: 100vh;
+  overflow: hidden;
+}
 main {
   width: 100%;
   overflow: auto;
@@ -87,16 +90,24 @@ button {
   border-width: 0;
   background-color: transparent;
   color: white;
+  height: 60px;
   aspect-ratio: 1/1;
   min-height: inherit;
   transition: color .2s linear, transform .2s linear;
 }
-
-button:hover {
+button.btn::selection{
+  outline: 0 solid red;
+}
+button.btn:hover {
   color: #ff1414;
   transform: scale(1.44);
 }
-
+button.btn ion-icon{
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  aspect-ratio: 1/1;
+}
 @keyframes textAnimate {
   0% {
     stroke-dasharray: 0 50%;
@@ -115,7 +126,8 @@ section div {
   margin-top: 5%;
   margin-bottom: 5%;
   min-height: 90%;
-  background-color: #101010f0;
+  background-color: #00000090;
+  backdrop-filter: blur(10px);
   border-radius: 2vmax;
   display: flex;
   flex-direction: column;
