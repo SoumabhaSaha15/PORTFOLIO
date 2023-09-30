@@ -5,11 +5,12 @@
   <title>Webmaster</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css" />
-
+  <link rel="stylesheet" href="./contact-form-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons-core.min.css"
+    integrity="sha512-OmevVDECSDeo7M4G+Nvh0+VLVGS2XnEOkXWJcJ0TRom3GpGgc/ryQIgpRZw20mb5eR2U0sqsm33MaR8yD1zdsQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
   <link href="icon.svg" rel="icon" />
 </head>
 
@@ -29,8 +30,7 @@
         <br />
         <figure style="width: 80%;" class="hide">
           <svg viewBox="0 0 100 100">
-            <image height='100' style="filter: drop-shadow(0 0 0.8rem #cc0000);"
-              xlink:href='icon.svg'></image>
+            <image height='100' style="filter: drop-shadow(0 0 0.8rem #cc0000);" xlink:href='icon.svg'></image>
           </svg>
           <figcaption>
             <svg viewBox="0 0 100 15" style="background-color: #220000;">
@@ -52,30 +52,35 @@
     </section>
     <section>
       <div>
-        <p>About</p>
+        <p class="hide">About</p>
         <hr />
       </div>
     </section>
     <section>
       <div>
-        <p>My-work</p>
+        <p class="hide">My-work</p>
         <hr />
       </div>
     </section>
     <section>
-      <div>
-        <p>Contact</p>
+      <div id="Contact">
+        <p class="hide">Contact</p>
         <hr />
+        <form class="hide">
+          <input type="text" name="Name" />
+          <input type="text" name="Name" />
+          <input type="text" name="Name" />
+          <input type="text" name="Name" />
+        </form>
       </div>
     </section>
   </main>
   <footer>
-    <abbr title="HOME"><button class="fa fa-home fa-xl btn"></button></abbr>
-    <abbr title="ABOUT-US"><button class="fa fa-address-card fa-xl btn"></button></abbr>
-    <abbr title="SERVICES"><button class="fa fa-desktop fa-xl btn"></button></abbr>
-    <abbr title="CONTACT-US"><button class="fa fa-phone fa-xl btn"></button></abbr>
+    <abbr title="HOME"><button  class="btn"><ion-icon name="home-outline"></ion-icon></button></abbr>
+    <abbr title="ABOUT-US"><button class="btn"><ion-icon name="person-circle-outline"></ion-icon></button></abbr>
+    <abbr title="SERVICES"><button class="btn"><ion-icon name="grid"></ion-icon></button></abbr>
+    <abbr title="CONTACT-US"><button class="btn"><ion-icon name="call"></ion-icon></button></abbr>
   </footer>
 </body>
 <script src="./script.js"></script>
-
 </html>
