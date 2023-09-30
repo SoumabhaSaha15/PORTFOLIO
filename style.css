@@ -91,6 +91,9 @@ button {
   background-color: transparent;
   color: white;
   height: 60px;
+  line-height: 60px;
+  display:grid;
+  place-items:center;
   aspect-ratio: 1/1;
   min-height: inherit;
   transition: color .2s linear, transform .2s linear;
