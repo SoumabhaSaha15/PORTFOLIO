@@ -103,7 +103,7 @@ button.btn::selection{
 }
 button.btn:hover {
   color: #ff1414;
-  transform: scale(1.44);
+  transform: scale(1.2);
 }
 button.btn ion-icon{
   height: 30px;
