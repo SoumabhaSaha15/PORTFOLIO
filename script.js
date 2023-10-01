@@ -13,8 +13,8 @@
   form.addEventListener('submit',(e) => {
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => window.alert('Success!', response))
-      .catch(error => window.alert('Error!', error.message));
+      .then((response )=>{window.alert('Success!')});
+      .catch((error)=>{window.alert('Error!', error.message)});
   });
   
   const Observer = new IntersectionObserver((entries) => {
