@@ -10,7 +10,7 @@
   transition: all 0.25s linear;
 }
 body{
-  height: 100vh;
+  max-height: 100vh;
 }
 hr{
   border-width: 0;
