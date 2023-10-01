@@ -24,6 +24,6 @@
   }, {
     threshold: 0,
   });
-  [...document.querySelectorAll('div .hide')].forEach((element) => { Observer.observe(element); })
+  [...document.querySelectorAll('div .hide')].forEach((element) => { Observer.observe(element); });
 
 })();
