@@ -14,7 +14,7 @@
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then((response )=>{window.alert('Success!')});
-      .catch((error)=>{window.alert('Error!', error.message)});
+      .catch((error)=>{window.alert('Error!')});
   });
   
   const Observer = new IntersectionObserver((entries) => {
