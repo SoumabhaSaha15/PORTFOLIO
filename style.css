@@ -7,10 +7,16 @@
   padding: 0;
   font-weight: 700;
   font-family: 'Lobster', cursive;
+  transition: all 0.25s linear;
 }
 body{
-  max-height: 100vh;
-  /*overflow: hidden;*/
+  height: 100vh;
+  overflow: hidden;
+}
+hr{
+  border-width: 0;
+  height: 2px;
+  background-color: #707070
 }
 main {
   width: 100%;
@@ -85,15 +91,12 @@ footer {
   color: white;
 }
 
-button {
+button.btn {
   font-weight: 200;
   border-width: 0;
   background-color: transparent;
   color: white;
   height: 60px;
-  line-height: 60px;
-  display:grid;
-  place-items:center;
   aspect-ratio: 1/1;
   min-height: inherit;
   transition: color .2s linear, transform .2s linear;
@@ -103,7 +106,7 @@ button.btn::selection{
 }
 button.btn ion-icon:hover {
   color: #ff1414;
-  transform: scale(1.2);
+  transform: scale(1.5) rotate(360deg);
 }
 button.btn ion-icon{
   height: 30px;
@@ -185,15 +188,4 @@ div .show {
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to top,#ff3333,#ff3333);
   border-radius: 2px;
-}
-#Contact form{
-    width: 65%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#Contact form input:focus{
-    outline: 0;
 }
