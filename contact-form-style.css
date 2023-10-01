@@ -23,7 +23,7 @@
 }
 #Contact form input{
     line-height: 4vmin;
-    height: 5vmin;
+    height: 5vmax;
     font-size: 4vmin;
     border-radius: 5px;
     border-width: 0;
