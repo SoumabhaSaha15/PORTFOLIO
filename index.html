@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./contact-form-style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons-core.min.css"
     integrity="sha512-OmevVDECSDeo7M4G+Nvh0+VLVGS2XnEOkXWJcJ0TRom3GpGgc/ryQIgpRZw20mb5eR2U0sqsm33MaR8yD1zdsQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -44,7 +45,7 @@
           Hello I am Soumabha Saha.
           This is my portfolio.
           I am CSE student.
-          I am 2nd year in engineering.
+          I am 2nd year in engeneering.
           I love css and javascript with svg and canvas.
           I love js library like Three and D3 and PIXI.</p>
       </div>
@@ -65,12 +66,19 @@
       <div id="Contact">
         <p class="hide">Contact</p>
         <hr />
-        <form class="hide">
-          <input type="text" name="Name" />
-          <input type="text" name="Name" />
-          <input type="text" name="Name" />
-          <input type="text" name="Name" />
+        <form class="hide" name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="your name" required/>
+          <input type="text" name="Email" placeholder="your email id" required/>
+          <textarea name="Message">write purpous</textarea>
+          <button id="contact-submit">submit</button>
         </form>
+        <div id="SocialMedia">
+          <a href="https://github.com/SoumabhaSaha15/"><button><ion-icon name="logo-github"></ion-icon></button></a>
+          <a href="https://www.facebook.com/profile.php?id=100073559877285"><button><ion-icon name="logo-facebook"></ion-icon></button></a>
+          <a href="https://www.linkedin.com/in/soumabha-saha-663816253/"><button><ion-icon name="logo-linkedin"></ion-icon></button></a>
+          <a href="https://www.instagram.com/_soumabha_saha/"><button><ion-icon name="logo-instagram"></ion-icon></button></a>
+          <a href="mailto:soumabhasaha1509@gmail.com"><button><ion-icon name="at-outline"></ion-icon></button></a>
+        </div>
       </div>
     </section>
   </main>
