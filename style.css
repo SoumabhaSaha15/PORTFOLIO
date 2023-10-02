@@ -10,10 +10,8 @@
   transition: all 0.25s linear;
 }
 body{
-  max-height: 100vh;
-  height:100vh;
-  min-height: 100vh;
-  overflow: hidden;
+  max-height: fit-content;
+  overflow: auto;
 }
 hr{
   border-width: 0;
