@@ -11,7 +11,7 @@
 }
 body{
   max-height: 100vh;
-  height
+  height:100vh;
   min-height: 100vh;
 }
 hr{
@@ -95,6 +95,7 @@ footer {
   grid-template-columns: repeat(auto-fill, 25vw);
   place-items: center;
   color: white;
+  border-width: 0;
 }
 
 button.btn {
@@ -104,8 +105,8 @@ button.btn {
   color: white;
   max-height: 60px;
   min-height: 60px;
-  aspect-ratio: 1/1;
-  min-height: inherit;
+  height:60px;
+  width:60px;
   transition: color .2s linear, transform .2s linear;
 }
 button.btn::selection{
