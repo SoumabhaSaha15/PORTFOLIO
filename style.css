@@ -91,6 +91,7 @@ footer {
   place-items: center;
   color: white;
   border-width: 0;
+  overflow:auto;
 }
 footer abbr{
   height:60px;
