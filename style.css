@@ -11,6 +11,7 @@
 }
 body{
   max-height: 100vh;
+  height
   min-height: 100vh;
 }
 hr{
@@ -47,6 +48,8 @@ header {
   color: #ff3333;
   text-align: center;
   height: 60px;
+  min-height: 60px;
+  max-height:60px;
   width: 100%;
 }
 
@@ -99,7 +102,8 @@ button.btn {
   border-width: 0;
   background-color: transparent;
   color: white;
-  height: 60px;
+  max-height: 60px;
+  min-height: 60px;
   aspect-ratio: 1/1;
   min-height: inherit;
   transition: color .2s linear, transform .2s linear;
