@@ -74,7 +74,6 @@
 #Contact div#SocialMedia a button ion-icon{
     transform: scale(2);
     color: whitesmoke;
-    border-radius: 5px;
 }
 #Contact div#SocialMedia a button ion-icon:hover{
     box-shadow:  5px 5px 5px #ff111180 ,-5px -5px 5px #ff111180, 5px -5px 5px #ff111180, -5px 5px 5px #ff111180;
