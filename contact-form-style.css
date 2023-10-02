@@ -22,7 +22,7 @@
     text-align: center;
 }
 #Contact form textarea::selection{
-    color:#ff1111;
+    background-color:#ff1111;
 }
 #Contact form input{
     line-height: 4vmin;
