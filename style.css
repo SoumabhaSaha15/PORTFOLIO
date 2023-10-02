@@ -11,6 +11,7 @@
 }
 body{
   max-height: 100vh;
+  min-height: 100vh;
 }
 hr{
   border-width: 0;
