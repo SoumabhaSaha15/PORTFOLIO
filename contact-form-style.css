@@ -21,7 +21,7 @@
     font-family: inherit;
     text-align: center;
 }
-#Contact form textarea:selection{
+#Contact form textarea::selection{
     color:#ff1111;
 }
 #Contact form input{
