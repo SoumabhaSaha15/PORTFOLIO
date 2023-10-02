@@ -72,8 +72,8 @@
     text-align: center;
 }
 #Contact div#SocialMedia a button ion-icon{
-    transform: scale(2.5);
-    color: #000000;
+    transform: scale(2);
+    color: whitesmoke;
     border-radius: 5px;
 }
 #Contact div#SocialMedia a button ion-icon:hover{
