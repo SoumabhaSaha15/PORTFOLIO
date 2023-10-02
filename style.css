@@ -9,7 +9,9 @@
   font-family: 'Lobster', cursive;
   transition: all 0.25s linear;
 }
-
+body{
+  border-width:0;
+}
 hr{
   border-width: 0;
   height: 2px;
