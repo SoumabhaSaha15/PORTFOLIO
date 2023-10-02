@@ -89,11 +89,12 @@ footer {
   grid-auto-flow: column;
   grid-template-columns: repeat(auto-fill, 25vw);
   place-items: center;
-  grid-auto-rows:60px;
   color: white;
   border-width: 0;
 }
-
+footer abbr{
+  height:60px;
+}
 button.btn {
   font-weight: 200;
   border-width: 0;
