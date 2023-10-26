@@ -172,10 +172,12 @@ figure.cirtificate{
   flex-direction:column;
 }
 figure.cirtificate img{
+  border-radius:2vmin;
   width:100%;
   margin-bottom:15px;
 }
 figure.cirtificate figcaption{
+  border-radius:2vmin;
   width:100%;
   backdrop-filter:blur(3px);
   text-align:center;
