@@ -28,11 +28,11 @@
   const CIRTIFICATE = [...document.querySelectorAll('img.cirtificate')];
   CIRTIFICATE.forEach(item=>{
     item.addEventListener('click',(e)=>{
-      console.log(e);
+      
       location.href=item.dataset.link;
     });
   });
-  
+  console.log(CIRTIFICATE);
   [...document.querySelectorAll('div .hide')].forEach((element) => { Observer.observe(element); });
 
   
