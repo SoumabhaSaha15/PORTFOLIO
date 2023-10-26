@@ -173,13 +173,16 @@ figure.cirtificate{
 }
 figure.cirtificate img{
   width:100%;
+  margin-bottom:15px;
 }
 figure.cirtificate figcaption{
   width:100%;
+  backdrop-filter:blur(3px);
   text-align:center;
 }
 figure.cirtificate figcaption a{
   font-family:'consolas';
+  font-weight:700;
   color:red;
   font-size:4vh;
 }
