@@ -27,8 +27,7 @@
 
   const CIRTIFICATE = [...document.querySelectorAll('img.cirtificate')];
   CIRTIFICATE.forEach(item=>{
-    item.addEventListener('click',(e)=>{
-      
+    item.addEventListener('dblclick',()=>{
       location.href=item.dataset.link;
     });
   });
