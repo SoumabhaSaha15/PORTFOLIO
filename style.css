@@ -168,8 +168,16 @@ figure.cirtificate{
   width:90%;
   margin-top:15px;
   margin-bottom:15px;
+  display:flex;
+  flex-direction:column;
 }
-
+figure.cirtificate img{
+  width:100%;
+}
+figure.cirtificate figcaption{
+  width:100%;
+  text-align:center;
+}
 .smaller-text {
   font-size: 35px;
   font-family: 'Comfortaa', serif;
