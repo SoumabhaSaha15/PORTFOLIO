@@ -30,6 +30,7 @@
   const CIRTIFICATE = [...document.querySelectorAll('img.cirtificate')];
   CIRTIFICATE.forEach(item=>{
     item.addEventListener('dbclick',(e)=>{
+      console.log(item);
       location.href=item.dataset.link;
     });
   });
