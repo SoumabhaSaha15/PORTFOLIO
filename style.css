@@ -166,6 +166,7 @@ div hr {
 
 figure.cirtificate{
   backdrop-filter:blur(3px);
+  border-radius:2vmin;
   width:90%;
   margin-top:15px;
   margin-bottom:15px;
