@@ -181,6 +181,7 @@ figure.cirtificate figcaption{
 figure.cirtificate figcaption a{
   font-family:'consolas';
   color:red;
+  font-size:4vh;
 }
 .smaller-text {
   font-size: 35px;
