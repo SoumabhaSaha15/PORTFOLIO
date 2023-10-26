@@ -164,7 +164,7 @@ div hr {
   width: calc(100% - 4vmax);
 }
 
-img.cirtificate{
+figure.cirtificate{
   width:90%;
   margin-top:15px;
   margin-bottom:15px;
