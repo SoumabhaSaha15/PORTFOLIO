@@ -27,11 +27,5 @@
   
   [...document.querySelectorAll('div .hide')].forEach((element) => { Observer.observe(element); });
 
-  const CIRTIFICATE = [...document.querySelectorAll('img.cirtificate')];
-  CIRTIFICATE.forEach(item=>{
-    item.addEventListener('dblclick',()=>{
-      location.href=item.dataset.link;
-    });
-  });
   
 })();
