@@ -178,6 +178,10 @@ figure.cirtificate figcaption{
   width:100%;
   text-align:center;
 }
+figure.cirtificate figcaption a{
+  font-family:'consolas';
+  color:red;
+}
 .smaller-text {
   font-size: 35px;
   font-family: 'Comfortaa', serif;
