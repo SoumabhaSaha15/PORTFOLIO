@@ -176,8 +176,8 @@ figure.cirtificate{
 }
 figure.cirtificate img{
   border-radius:2vmin;
-  border:2px solid #00000000;
-  width:calc(100% - 4px);
+  border:4px solid #00000000;
+  width:calc(100% - 8px);
   margin-bottom:15px;
 }
 figure.cirtificate figcaption{
