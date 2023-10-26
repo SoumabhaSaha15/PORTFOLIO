@@ -24,15 +24,17 @@
   }, {
     threshold: 0,
   });
-  
-  [...document.querySelectorAll('div .hide')].forEach((element) => { Observer.observe(element); });
 
   const CIRTIFICATE = [...document.querySelectorAll('img.cirtificate')];
   CIRTIFICATE.forEach(item=>{
-    item.addEventListener('dbclick',(e)=>{
-      console.log(item);
+    item.addEventListener('click',(e)=>{
+      console.log(e);
       location.href=item.dataset.link;
     });
   });
+  
+  [...document.querySelectorAll('div .hide')].forEach((element) => { Observer.observe(element); });
+
+  
   
 })();
