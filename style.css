@@ -182,6 +182,7 @@ figure.cirtificate figcaption{
   border-radius:2vmin;
   width:100%;
   text-align:center;
+  margin-bottom:15px;
 }
 figure.cirtificate figcaption a{
   font-family:'consolas';
