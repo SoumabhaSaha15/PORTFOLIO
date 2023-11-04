@@ -7,12 +7,12 @@
     element.style.display = 'grid';
   }
   const SECTIONS = [HOME,ABOUT,MY_PROJECT,CONTACT] = document.querySelectorAll("body main section");
-  const BTN = [HOME_BTN,ABOUT_BTN,MY_PROJECT_BTN,CONTACT_BTN]=[...document.getElementsByClassName('btn')];
+  // const BTN = [HOME_BTN,ABOUT_BTN,MY_PROJECT_BTN,CONTACT_BTN]=[...document.getElementsByClassName('btn')];
 
-  HOME_BTN.addEventListener("click",(e)=>{location.hash = "#home";});
-  ABOUT_BTN.addEventListener("click",(e)=>{location.hash = "#about";});
-  MY_PROJECT_BTN.addEventListener("click",(e)=>{location.hash = "#my-projects";});
-  CONTACT_BTN.addEventListener("click",(e)=>{location.hash = "#contact";});
+  // HOME_BTN.addEventListener("click",(e)=>{location.hash = "#home";});
+  // ABOUT_BTN.addEventListener("click",(e)=>{location.hash = "#about";});
+  // MY_PROJECT_BTN.addEventListener("click",(e)=>{location.hash = "#my-projects";});
+  // CONTACT_BTN.addEventListener("click",(e)=>{location.hash = "#contact";});
 
   window.addEventListener("hashchange",(e)=>{
     switch(location.hash){
