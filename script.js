@@ -30,6 +30,22 @@
       break;
     }
   });
+  window.addEventListener("load",(e)=>{
+    switch(location.hash){
+      case "#home":
+        SHOW_ONLY(HOME);
+      break;
+      case "#about":
+        SHOW_ONLY(ABOUT);
+      break;
+      case "#my-projects":
+        SHOW_ONLY(MY_PROJECT);
+      break;
+      case "#contact":
+        SHOW_ONLY(CONTACT);
+      break;
+    }
+  });
   
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwbvfc8u2DmIAn90nEKs9EIlvFGZuCoCeloEwRdxOBJ8TiaDh4jIlfqzTDX4ockAbXc7A/exec';
   const form = document.forms['submit-to-google-sheet'];
