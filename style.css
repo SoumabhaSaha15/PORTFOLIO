@@ -110,8 +110,11 @@ body{
             border-width:0;
           }
           & a{
-            color:red;
-            display:inline-block;
+             width: calc(100% - 4vmax - 10vh);
+             height: 8vh;
+             color: red;
+             line-height: 8vh;
+             text-align: center;
           }
         }
         & hr{
