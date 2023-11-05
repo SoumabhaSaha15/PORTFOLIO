@@ -111,6 +111,7 @@ body{
           }
           & a{
             color:red;
+            display:inline-block;
           }
         }
         & hr{
