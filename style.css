@@ -98,6 +98,21 @@ body{
           font-family: 'Comfortaa', 'Arial Narrow', Arial, sans-serif;
           text-transform: capitalize;
         }
+        & div.projects{
+          width: calc(100% - 4vmax);
+          height:10vh;
+          display:grid;
+          grid-template-columns:10vh calc(100% - 4vmax - 1vh);
+          place-items:center;
+          & img{
+            width:8vh;
+            height:8vh;
+            border-width:0;
+          }
+          & a{
+            color:red;
+          }
+        }
         & hr{
           width: calc(100% - 4vmax);
           border-width: 0;
