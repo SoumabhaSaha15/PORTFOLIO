@@ -105,6 +105,7 @@ body{
           'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
           & a{
             grid-area:a;
+            text-align:center;
             width:80%;
           }
           & img{
@@ -112,13 +113,13 @@ body{
             margin:10px;
             grid-area:img;
           }
-          & iframe{
+          & iframe{ 
             grid-area: iframe;
             display: block;
-            margin: 10px;
+            margin: 20px;
             border-width: 0;
             aspect-ratio: 16/9;
-            width: calc(100% - 20px);
+            width: calc(100% - 40px);
           }
         }
         & hr{
