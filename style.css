@@ -103,19 +103,19 @@ body{
           display:grid;
           grid-template-areas:'img a a a a a a a a a'
           'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
-          place-items:center;
-/*           grid-gap: 5px; */
           & a{
             grid-area:a;
           }
           & img{
-            width:10%;
-            aspect-ratio:1/1;
+            width:20%;
+            margin:10px;
             grid-area:img;
           }
           & iframe{
             grid-area:iframe;
             display:block;
+            margin:5px;
+            width:90%;
           }
         }
         & hr{
