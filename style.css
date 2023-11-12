@@ -106,9 +106,10 @@ body{
           place-items:center;
           grid-gap: 5px;
           & a{
-            grid-area:iframe;
+            grid-area:a;
           }
           & img{
+            height:8vmin;
             grid-area:img;
           }
           & iframe{
