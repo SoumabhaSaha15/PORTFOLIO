@@ -105,7 +105,14 @@ body{
           'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
           place-items:center;
           grid-gap: 5px;
+          & a{
+            grid-area:iframe;
+          }
+          & img{
+            grid-area:img;
+          }
           & iframe{
+            grid-area:iframe;
             display:block;
           }
         }
