@@ -105,6 +105,9 @@ body{
           'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
           place-items:center;
           grid-gap: 5px;
+          & iframe{
+            display:block;
+          }
         }
         & hr{
           width: calc(100% - 4vmax);
