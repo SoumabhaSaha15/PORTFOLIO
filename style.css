@@ -100,9 +100,9 @@ body{
         }
         & div.projects{
           width: calc(100% - 4vmax);
-          height:10vh;
           display:grid;
-          grid-template-columns:10vh calc(100% - 4vmax - 1vh);
+          grid-template-areas:'img a a a a a a a a a'
+          'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
           place-items:center;
           & img{
             width:8vh;
