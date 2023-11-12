@@ -104,18 +104,7 @@ body{
           grid-template-areas:'img a a a a a a a a a'
           'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
           place-items:center;
-          & img{
-            width:8vh;
-            height:8vh;
-            border-width:0;
-          }
-          & a{
-             width: calc(100% - 4vmax - 10vh);
-             height: 8vh;
-             color: red;
-             line-height: 8vh;
-             text-align: center;
-          }
+          grid-gap: 5px;
         }
         & hr{
           width: calc(100% - 4vmax);
