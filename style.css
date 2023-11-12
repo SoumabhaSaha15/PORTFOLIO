@@ -104,12 +104,13 @@ body{
           grid-template-areas:'img a a a a a a a a a'
           'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
           place-items:center;
-          grid-gap: 5px;
+/*           grid-gap: 5px; */
           & a{
             grid-area:a;
           }
           & img{
-            height:8vmin;
+            width:10%;
+            aspect-ratio:1/1;
             grid-area:img;
           }
           & iframe{
