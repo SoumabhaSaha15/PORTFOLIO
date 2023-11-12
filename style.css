@@ -113,11 +113,12 @@ body{
             grid-area:img;
           }
           & iframe{
-            grid-area:iframe;
-            display:block;
-            margin:10px;
-            aspect-ratio:16/9;
-            width:calc(100vh - 20px);
+            grid-area: iframe;
+            display: block;
+            margin: 10px;
+            border-width: 0;
+            aspect-ratio: 16/9;
+            width: calc(100% - 20px);
           }
         }
         & hr{
