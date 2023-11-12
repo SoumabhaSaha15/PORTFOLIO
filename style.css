@@ -105,6 +105,7 @@ body{
           'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
           & a{
             grid-area:a;
+            width:80%;
           }
           & img{
             width:20%;
