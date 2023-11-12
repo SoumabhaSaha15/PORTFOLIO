@@ -115,8 +115,9 @@ body{
           & iframe{
             grid-area:iframe;
             display:block;
-            margin:5px;
-            width:90%;
+            margin:10px;
+            aspect-ratio:9/16;
+            width:calc(100vh - 20px);
           }
         }
         & hr{
