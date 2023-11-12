@@ -115,6 +115,8 @@ body{
           }
           & iframe{ 
             grid-area: iframe;
+            background-color:gray;
+            border-radius:2vmin;
             display: block;
             margin: 20px;
             border-width: 0;
