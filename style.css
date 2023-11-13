@@ -122,7 +122,7 @@ body{
             margin: 10px;
             border-width: 0;
             aspect-ratio: 16/9;
-            width: calc(100% - 10px);
+            width: calc(100% - 20px);
           }
         }
         & hr{
