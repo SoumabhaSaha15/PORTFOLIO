@@ -100,17 +100,18 @@ body{
         }
         & div.projects{
           width: calc(100% - 4vmax);
-          display:grid;
-          grid-template-areas:'img a a a a a a a a a'
-          'iframe iframe iframe iframe iframe iframe iframe iframe iframe iframe';
+          display: grid;
+          grid-template-columns: 20% 80%;
+          grid-template-areas:'img_div link_div'
+                                'iframe iframe';
           & a{
-            grid-area:a;
+            grid-area:link_div;
             text-align:center;
-            width:80%;
+            width:100%;
           }
           & img{
-            width:20%;
-            margin:10px;
+            width:100%;
+            margin:0;
             grid-area:img;
           }
           & iframe{ 
