@@ -112,7 +112,7 @@ body{
           & img{
             width:100%;
             margin:0;
-            grid-area:img;
+            grid-area:img_div;
           }
           & iframe{ 
             grid-area: iframe;
