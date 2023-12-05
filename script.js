@@ -11,6 +11,7 @@
   BTN.forEach(item=>{
     item.onclick=(e)=>{
       e.currentTarget.classList.toggle('clicked');
+      console.log(e.currentTarget.classList);
     }
   });
   // HOME_BTN.addEventListener("click",(e)=>{location.hash = "#home";});
