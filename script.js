@@ -8,6 +8,7 @@
   }
   const SECTIONS = [HOME,ABOUT,MY_PROJECT,CONTACT] = document.querySelectorAll("body main section");
   const BTN = [HOME_BTN,ABOUT_BTN,MY_PROJECT_BTN,CONTACT_BTN]=[...document.querySelectorAll("footer a button.btn ion-icon")];
+  BTN.forEach(item=>{item.onclick=(e)=>{console.log(e.currentTarget);}});
   // HOME_BTN.addEventListener("click",(e)=>{location.hash = "#home";});
   // ABOUT_BTN.addEventListener("click",(e)=>{location.hash = "#about";});
   // MY_PROJECT_BTN.addEventListener("click",(e)=>{location.hash = "#my-projects";});
