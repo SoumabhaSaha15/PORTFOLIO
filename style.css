@@ -253,7 +253,7 @@ body{
                 transform: scale(2);
                 color: whitesmoke;
               }
-              & ion-icon:hover{
+              & ion-icon.clicked{
                 box-shadow:  5px 5px 5px #ff111180 ,-5px -5px 5px #ff111180, 5px -5px 5px #ff111180, -5px 5px 5px #ff111180;
                 color: #FF1111;
                 transform: scale(2.5);
