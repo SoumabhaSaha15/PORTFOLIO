@@ -17,23 +17,23 @@
     switch(location.hash){
       case "#home","":
         SHOW_ONLY(HOME);
-        HOME_BTN.trigger("hover");
+        HOME_BTN.focus();
       break;
       case "#about":
         SHOW_ONLY(ABOUT);
-        ABOUT_BTN.trigger("hover");
+        ABOUT_BTN.focus();
       break;
       case "#my-projects":
         SHOW_ONLY(MY_PROJECT);
-        MY_PROJECT_BTN.trigger("hover");
+        MY_PROJECT_BTN.focus();
       break;
       case "#contact":
         SHOW_ONLY(CONTACT);
-        CONTACT_BTN.trigger("hover")
+        CONTACT_BTN.focus();
       break;
       default:
         SHOW_ONLY(HOME);
-        HOME_BTN.trigger("hover");
+        HOME_BTN.focus();
       break;
     }
   }
