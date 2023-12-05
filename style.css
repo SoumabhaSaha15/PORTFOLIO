@@ -258,6 +258,10 @@ body{
                 color: #FF1111;
                 transform: scale(2.5);
               }
+              & ion-icon:focus {
+                color: #ff1414;
+                transform: scale(1.5) rotate(360deg);
+              }
             }
           } 
         } 
