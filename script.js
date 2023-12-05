@@ -17,23 +17,23 @@
     switch(location.hash){
       case "#home","":
         SHOW_ONLY(HOME);
-        HOME_BTN.focus();
+        HOME_BTN.querySelector("ion-icon").focus();
       break;
       case "#about":
         SHOW_ONLY(ABOUT);
-        ABOUT_BTN.focus();
+        ABOUT_BTN.querySelector("ion-icon").focus();
       break;
       case "#my-projects":
         SHOW_ONLY(MY_PROJECT);
-        MY_PROJECT_BTN.focus();
+        MY_PROJECT_BTN.querySelector("ion-icon").focus();
       break;
       case "#contact":
         SHOW_ONLY(CONTACT);
-        CONTACT_BTN.focus();
+        CONTACT_BTN.querySelector("ion-icon").focus();
       break;
       default:
         SHOW_ONLY(HOME);
-        HOME_BTN.focus();
+        HOME_BTN.querySelector("ion-icon").focus();
       break;
     }
   }
