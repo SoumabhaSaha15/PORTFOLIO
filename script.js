@@ -14,6 +14,12 @@
       console.log(e.currentTarget.classList);
     }
   });
+  const CLICK_ONLY=(element)=>{
+    BTN.forEach(item=>{
+      item.classList.remove('clicked');
+    });
+    element.click();
+  }
   // HOME_BTN.addEventListener("click",(e)=>{location.hash = "#home";});
   // ABOUT_BTN.addEventListener("click",(e)=>{location.hash = "#about";});
   // MY_PROJECT_BTN.addEventListener("click",(e)=>{location.hash = "#my-projects";});
@@ -23,23 +29,23 @@
     switch(location.hash){
       case "#home","":
         SHOW_ONLY(HOME);
-        HOME_BTN.click();
+        CLICK_ONLY(HOME_BTN);
       break;
       case "#about":
         SHOW_ONLY(ABOUT);
-        ABOUT_BTN.click();
+        CLICK_ONLY(ABOUT_BTN);
       break;
       case "#my-projects":
         SHOW_ONLY(MY_PROJECT);
-        MY_PROJECT_BTN.click();
+        CLICK_ONLY(MY_PROJECT_BTN);
       break;
       case "#contact":
         SHOW_ONLY(CONTACT);
-        CONTACT_BTN.click();
+        CLICK_ONLY(CONTACT_BTN);
       break;
       default:
         SHOW_ONLY(HOME);
-        HOME_BTN.click();
+        CLICK_ONLY(HOME_BTN);
       break;
     }
   }
