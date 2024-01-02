@@ -301,14 +301,11 @@ body{
           line-height: 30px;
           aspect-ratio: 1/1;
         }
-        & ion-icon.clicked{
+        & ion-icon.clicked.md.hydrated{
           color: #ff1414;
           transform: scale(1.5) rotate(360deg);
         }
-        & ion-icon:hover {
-          color: #ff1414;
-          transform: scale(1.5) rotate(360deg);
-        }
+        
       }
       & button.btn::selection{
         outline: 0 solid red;
