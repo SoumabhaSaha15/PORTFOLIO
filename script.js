@@ -27,7 +27,7 @@
 
   const LOAD_PAGE = (e)=>{
     switch(location.hash){
-      case "#home","":
+      case "#home":
         SHOW_ONLY(HOME);
         CLICK_ONLY(HOME_BTN);
       break;
