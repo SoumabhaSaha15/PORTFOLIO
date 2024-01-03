@@ -28,7 +28,7 @@
   const LOAD_PAGE = (e)=>{
     //window.alert(location.hash);
     switch(location.hash){
-      case "#home":
+      case "#home","":
         SHOW_ONLY(HOME);
         CLICK_ONLY(HOME_BTN);
       break;
