@@ -26,6 +26,7 @@
   // CONTACT_BTN.addEventListener("click",(e)=>{location.hash = "#contact";});
 
   const LOAD_PAGE = (e)=>{
+    window.alert(location.hash);
     switch(location.hash){
       case "#home":
         SHOW_ONLY(HOME);
