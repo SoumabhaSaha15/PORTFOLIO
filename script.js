@@ -10,7 +10,7 @@
   const BTN = [HOME_BTN,ABOUT_BTN,MY_PROJECT_BTN,CONTACT_BTN]=[...document.querySelectorAll("footer a button.btn ion-icon")];
   BTN.forEach(item=>{
     item.onclick=(e)=>{
-      e.currentTarget.classList.toggle('clicked');
+      e.currentTarget.classList.add('clicked');
       console.log(e.currentTarget.classList);
     }
   });
