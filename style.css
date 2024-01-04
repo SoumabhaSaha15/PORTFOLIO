@@ -304,6 +304,7 @@ body{
         & ion-icon.clicked.md.hydrated{
           color: #ff1414;
           transform: scale(1.5) rotate(360deg);
+          transition: color .1s linear, transform .1s linear;
         }
         
       }
