@@ -29,24 +29,24 @@
     //window.alert(location.hash);
     switch(location.hash){
       case "#home","":
-        SHOW_ONLY(HOME);
         CLICK_ONLY(HOME_BTN);
+        SHOW_ONLY(HOME);
       break;
       case "#about":
-        SHOW_ONLY(ABOUT);
         CLICK_ONLY(ABOUT_BTN);
+        SHOW_ONLY(ABOUT);
       break;
       case "#my-projects":
-        SHOW_ONLY(MY_PROJECT);
         CLICK_ONLY(MY_PROJECT_BTN);
+        SHOW_ONLY(MY_PROJECT);
       break;
       case "#contact":
-        SHOW_ONLY(CONTACT);
         CLICK_ONLY(CONTACT_BTN);
+        SHOW_ONLY(CONTACT);
       break;
       default:
-        SHOW_ONLY(HOME);
         CLICK_ONLY(HOME_BTN);
+        SHOW_ONLY(HOME);
       break;
     }
   }
