@@ -11,7 +11,7 @@
   BTN.forEach(item=>{
     item.onclick=(e)=>{
       e.currentTarget.classList.add('clicked');
-      console.log(e.currentTarget.classList);
+      // console.log(e.currentTarget.classList);
     }
   });
   const CLICK_ONLY=(element)=>{
