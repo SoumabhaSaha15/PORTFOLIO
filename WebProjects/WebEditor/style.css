@@ -1,106 +1,121 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
     transition: all 0.25s linear;
-    font-family: 'Comfortaa';
 }
 body{
-    background-image: url("https://source.unsplash.com/1440x1440/?greenforest");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-div#root{
-    width: 100%;
-    height: 100vh;
-    border-radius: 1vmin;
-    animation:breath 3s ease-in-out infinite alternate;
-    & section.output{
+    & div#root{
+        height: 100vh;
         width: 100%;
-        height: 10vh;
-        line-height: 10vh;
-        display: grid;
-        place-items: center;
-        & input[type="text"]#output {
-            width:calc(100% - 4px - 2vmin);
-            height: calc(10vh - 4px);
-            border-radius: 2vmin;
-            line-height: 10vh;
-            font-size: 6vh;
-            border-width: 0;
-            color: azure;
-            background: #15151560;
-            text-align: right;
-            padding-left: 1vmin;
-            padding-right: 1vmin;
-            margin-top: 2px;
-            margin-bottom: 2px;
-            cursor:pointer;
-        }
-        & input[type="text"]#output:focus{
-            outline-width: 0;
-            border-width: 0;
-        }
-        & input[type="text"]#output::placeholder{
-            color: #252525;
-        }
-    }
-    & section.controls{
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #00000000;
-        & div.history{
-            overflow: auto;
+        & header{
             width: 100%;
-            & div.expressionHolder{
-                margin-top: 2px;
-                margin-bottom: 2px;
-                border-radius: 2vmin;
-                overflow: hidden;
+            text-align: center;
+            height: 5vh;
+            line-height: 5vh;
+            font-size: 4vh;
+            color: #656565;
+            background-color: black;
+        }
+        & main{
+            width: 100%;
+            height: 90vh;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-auto-rows:100% ;
+            place-items: center;
+            & section#editor{
+                resize: horizontal;
+                height: inherit;
                 width: 100%;
-                border-width: 0;
-                color: azure;
-                height: 10vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: right;
-                & input[type="text"]{
-                    width:calc(100% - 4px - 2vmin);
-                    padding-left: 1vmin;
-                    padding-right: 1vmin;
-                    height:5vh;
-                    border-width: 0;
-                    text-align: right;
-                    background-color: #25252560;
-                    line-height: 5vh;
-                    font-size: 4vh;
-                    font-weight: 900;
-                    border-radius: 2vmin;
+                display: grid;
+                grid-template-rows: 5vh 80vh 5vh;
+                grid-auto-columns: 100%;
+                & span#control{
+                    display: grid;
+                    grid-auto-rows: 5vh;
+                    grid-template-columns: 50% 50%;
+                    place-items: center;
+                    & button{
+                        width: 100%;
+                        font-size: 4vmin;
+                        border-width: 0;
+                        line-height: 5vh;
+                        height: 5vh;
+                        overflow: hidden;
+                        color:#afafaf;
+                        background-color: #161616;
+                    }
+                    & button:focus{
+                        border-width: 0;
+                        outline-width: 0;
+                    }
                 }
-                & input[type="text"]:focus{
-                    outline-width: 0;
+                & span#files{
+                    display: grid;
+                    grid-auto-rows: 5vh;
+                    grid-template-columns: 33.33% 33.34% 33.33%;
+                    place-items: center;
+                    & button{
+                        font-size: 4vmin;
+                        width: 100%;
+                        line-height: 5vh;
+                        border-width: 0;
+                        height: 5vh;
+                        color: #656565;
+                    }
+                    & button:focus{
+                        border-width: 0;
+                        outline-width: 0;
+                    }
+                }
+                & span#text{
+                    & textarea{
+                        resize: none;
+                        height: 80vh;
+                        border-width: 0;
+                        width: 100%;
+                        background-color: #656565;
+                        cursor: pointer;
+                        font-size:3vmin ;
+                    }
+                    & textarea:focus{
+                        border-width: 0;
+                        outline-width: 0;
+                    }
+                }
+            }
+            & section#output{
+                resize: horizontal;
+                width: 100%;
+                height: inherit;
+                & iframe{
                     border-width: 0;
+                    width: 100%;
+                    height: inherit;   
                 }
             }
         }
+        & footer{
+            width: 100%;
+            text-align: center;
+            height: 5vh;
+            line-height: 5vh;
+            font-size: 4vh;
+            color: #656565;
+            background-color: black;
+        }
     }
 }
+
 ::-webkit-scrollbar {
-    width: 4px;
-    border-radius: 2px;
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #b8500b;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
-    background:rgb(0, 0, 0);
-    border-radius: 2px;
-}
-@keyframes breath {
-    from{
-        backdrop-filter: blur(5px);
-    }to{
-        backdrop-filter: blur(0px);
-    }
+  background: #b8500b;
+  border-radius: 5px;
 }

@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./calculator.svg" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Soumabha Saha, Webmaster-Webeditor">
+  <meta name="robots" content="index,follow"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="icon" href="./logo.svg"/>
+  <title>WebEditor</title>
 </head>
 <body>
     <div id="root">
-        <section class="output"><input type="text" id="output" placeholder="enter expression"/></section>
-        <section class="controls"><div class="history"></div></section>
+        <header>
+          WebEditor
+        </header>
+        <main>
+          <section id="editor">
+            <span id="files">
+              <button id="html_button" style="background-color: black;
+              ">html</button>
+              <button id="css_button" style="background-color: black;
+              ">css</button>
+              <button id="js_button" style="background-color: black;
+              ">js</button>
+            </span>
+            <span id="text">
+              <textarea id="html_editor" style="display: none;">
+                <!--html-->
+              </textarea>
+              <textarea id="css_editor" style="display: none;">
+                /*css*/
+              </textarea>
+              <textarea id="js_editor" style="display: none;">
+                //js
+              </textarea>
+            </span>
+            <span id="control">
+              <button>run</button>
+              <button>wide</button>
+            </span>
+          </section>
+          <section id="output">
+            <iframe></iframe>
+          </section>
+        </main>
+        <footer>dev:Soumabha Saha</footer>
     </div>
 </body>
 <script src="./script.js"></script>
