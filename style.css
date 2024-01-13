@@ -159,7 +159,7 @@ body{
             & a{
               font-family:'consolas';
               font-weight:700;
-              color:red;
+              color:#f100fc;
               font-size:4vh;
             }
           }
