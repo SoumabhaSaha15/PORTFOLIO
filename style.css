@@ -190,7 +190,7 @@ body{
             line-height: 4vmin;
             height: 5vmax;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
             padding:2px 5px;
             resize: vertical;
             border-width: 0;
@@ -219,10 +219,11 @@ body{
             color: whitesmoke;
             font-family: inherit;
             padding: 5px;
-            height: 3vmax;
+            line-height: 4vmin;
+            height: 5vmax;
+            
             text-align: center;
-            line-height: 2vmax;
-            font-size: 2vmax;
+            
             background-color: #303030;
             text-transform: uppercase;
           }
