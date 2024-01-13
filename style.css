@@ -208,6 +208,7 @@ body{
             font-size: 4vmin;
             border-radius: 5px;
             border-width: 0;
+            padding:2px 5px;
             text-align: center;
             font-family: inherit;
             color: whitesmoke;
