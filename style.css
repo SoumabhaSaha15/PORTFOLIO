@@ -250,12 +250,12 @@ body{
                 color: whitesmoke;
               }
               & ion-icon:hover{
-                box-shadow:  5px 5px 5px #ff111180 ,-5px -5px 5px #ff111180, 5px -5px 5px #ff111180, -5px 5px 5px #ff111180;
-                color: #FF1111;
+                box-shadow:  5px 5px 5px #ff111180 ,-5px -5px 5px #f1e5fc80, 5px -5px 5px #f1e5fc80, -5px 5px 5px #f1e5fc80;
+                color: #f1e5fc80;
                 transform: scale(2.5);
               }
               & ion-icon:focus {
-                color: #ff1414;
+                color: #f1e5fc;
                 transform: scale(1.5) rotate(360deg);
               }
             }
