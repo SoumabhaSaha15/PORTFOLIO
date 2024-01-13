@@ -71,7 +71,7 @@ body{
           & figcaption{
             & svg{
               & text{
-                color:#f1e5fc80;
+                /*color:#f1e5fc80;*/
                 line-height: 48px;
                 transition: stroke-dasharray, stroke-dashoffset;
                 animation: textAnimate 3s ease-in-out infinite;
@@ -306,7 +306,7 @@ body{
         
       }
       & button.btn::selection{
-        outline: 0 solid red;
+        outline: 0 solid #f1e5fc;
       }
     }
   }
