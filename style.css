@@ -11,7 +11,7 @@ body{
 
   & header{
     background-color: #000000;
-    color: #ff3333;
+    color: #fbfbff;
     text-align: center;
     height: 60px;
     min-height: 60px;
@@ -20,7 +20,7 @@ body{
     & svg{
       width: 100%;
       & text {
-        stroke: #ff3333;
+        stroke: #fbfbff;
         stroke-width: 1.5;
         letter-spacing: 1dvw;
         line-height: 48px;
@@ -298,7 +298,7 @@ body{
           aspect-ratio: 1/1;
         }
         & ion-icon.clicked.md.hydrated{
-          color: #ff1414;
+          color: #fbfbff;
           transform: scale(1.5) rotate(360deg);
           transition: color .1s linear, transform .1s linear;
         }
