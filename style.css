@@ -183,6 +183,7 @@ body{
           align-items: center;
           font-family: Comfortaa;
           & input,textarea,button:focus{
+            margin: 10px;
             outline: 0;
           }
           & textarea{
@@ -220,10 +221,8 @@ body{
             font-family: inherit;
             padding: 5px;
             line-height: 4vmin;
-            height: 5vmax;
-            
-            text-align: center;
-            
+            height: 5vmax;
+            text-align: center;
             background-color: #303030;
             text-transform: uppercase;
           }
