@@ -71,6 +71,7 @@ body{
           & figcaption{
             & svg{
               & text{
+                color:#f1e5fc80;
                 line-height: 48px;
                 transition: stroke-dasharray, stroke-dashoffset;
                 animation: textAnimate 3s ease-in-out infinite;
@@ -250,7 +251,7 @@ body{
                 color: whitesmoke;
               }
               & ion-icon:hover{
-                box-shadow:  5px 5px 5px #ff111180 ,-5px -5px 5px #f1e5fc80, 5px -5px 5px #f1e5fc80, -5px 5px 5px #f1e5fc80;
+                box-shadow:  5px 5px 5px #f1e5fc80 ,-5px -5px 5px #f1e5fc80, 5px -5px 5px #f1e5fc80, -5px 5px 5px #f1e5fc80;
                 color: #f1e5fc80;
                 transform: scale(2.5);
               }
