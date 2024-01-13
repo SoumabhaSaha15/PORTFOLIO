@@ -11,7 +11,7 @@ body{
 
   & header{
     background-color: #000000;
-    color: #fbfbff;
+    color: #f1e5fc;
     text-align: center;
     height: 60px;
     min-height: 60px;
@@ -20,7 +20,7 @@ body{
     & svg{
       width: 100%;
       & text {
-        stroke: #fbfbff;
+        stroke: #f1e5fc;
         stroke-width: 1.5;
         letter-spacing: 1dvw;
         line-height: 48px;
@@ -298,7 +298,7 @@ body{
           aspect-ratio: 1/1;
         }
         & ion-icon.clicked.md.hydrated{
-          color: #fbfbff;
+          color: #f1e5fc;
           transform: scale(1.5) rotate(360deg);
           transition: color .1s linear, transform .1s linear;
         }
@@ -347,6 +347,6 @@ div .show {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to top,#ff3333,#ff3333);
+  background-image: linear-gradient(to top,#f1e5fc,#fbfbff);
   border-radius: 2px;
 }
