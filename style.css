@@ -75,6 +75,9 @@ body{
             border-radius: 25vh;
           }
           & figcaption{
+                width: 100%;
+                display: grid;
+                place-items: center;
             & svg{
               width: 100%;
               & text{
