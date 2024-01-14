@@ -65,6 +65,7 @@ body{
         word-wrap: break-word;
         align-items: center;
         & svg {
+          width:clamp(250px,50%,450px);
           border-radius: 25vh;
         }
         & figure{
@@ -183,7 +184,8 @@ body{
           & textarea{
             background-color: #303030;
             line-height: 4vmin;
-            height: 5vmax;
+            height: 5vmax;
+
             width: 100%;
             border-radius: 5px;
             padding:2px 5px;
@@ -216,8 +218,10 @@ body{
             font-family: inherit;
             padding: 5px;
             line-height: 4vmin;
-            height: 5vmax;
-            text-align: center;
+            height: 5vmax;
+
+            text-align: center;
+
             background-color: #303030;
             text-transform: uppercase;
           }
