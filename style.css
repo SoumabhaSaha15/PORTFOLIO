@@ -79,7 +79,7 @@ body{
                 display: grid;
                 place-items: center;
             & svg{
-              width: 100%;
+              width: clamp(min(250px,100%),50%,450px);
               & text{
                 /*color:#f1e5fc80;*/
                 line-height: 48px;
