@@ -64,11 +64,11 @@ body{
         flex-direction: column;
         word-wrap: break-word;
         align-items: center;
-        
+        justify-content:center;
         & figure{
           & svg {
-          width:clamp(250px,50%,450px);
-          border-radius: 25vh;
+            width:clamp(250px,50%,450px);
+            border-radius: 25vh;
           }
           & figcaption{
             & svg{
