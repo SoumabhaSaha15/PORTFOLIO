@@ -42,7 +42,7 @@ body{
       radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#fbfbff 68% 70%,#0000 72%) 0 0/calc(2*20px) calc(2*20px),
       repeating-conic-gradient(#f1e5fc 0 25%,#0000 0 50%) 0 0/calc(2*20px) calc(2*20px),
       radial-gradient(#0000 66%,#fbfbff 68% 70%,#0000 72%) 0 calc(20px/2)/20px 20px
-      #f1e5fc;
+      #dfcbf4;
     min-height: calc(100vh - 120px);
     max-height: calc(100vh - 120px);
     height: calc(100vh - 120px);
