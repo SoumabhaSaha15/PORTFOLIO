@@ -66,12 +66,17 @@ body{
         align-items: center;
         justify-content:center;
         & figure{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           & svg {
             width:clamp(250px,50%,450px);
             border-radius: 25vh;
           }
           & figcaption{
             & svg{
+              width: 100%;
               & text{
                 /*color:#f1e5fc80;*/
                 line-height: 48px;
