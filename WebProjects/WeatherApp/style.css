@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  transition: all 0.25s linear ;
+  scroll-behavior: smooth;
+}
+
+body {
+  & div#root {
+    & main {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      max-width: 100%;
+      min-height: 100vh;
+      max-height: 100vh;
+      overflow: auto;
+      word-break: break-all;
+      background-image:url('./assets/background.jpg');
+      & section {
+        padding: 3px;
+        max-width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        & search-bar::part(container) {
+          max-height: 6vh;
+          min-height: 6vh;
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1vh;
+          background-color: #80808080;
+        }
+
+        & search-bar::part(mark) {
+          max-height: 6vh;
+          max-width: 6vh;
+          padding: 3px;
+          overflow: hidden;
+        }
+
+        & search-bar::part(field) {
+          max-height: 6vh;
+          min-height: 6vh;
+          max-width: calc(100% - 6vh);
+          min-width: calc(100% - 6vh);
+          overflow: hidden;
+          color: black;
+          border-width: 0;
+          background-color: transparent;
+          font-size: 5vmin;
+          line-height: 6vh;
+          padding-left: 1px;
+          text-align: center;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 700;
+          
+        }
+
+        & search-bar::part(field):focus {
+          outline: 0 solid white;
+          font-family: 'Nunito', sans-serif;
+        }
+
+        & weather-condition::part(container) {
+          transition: all 1s ease-in-out;
+          max-height: 40vh;
+          min-height: 40vh;
+          color: #000000;
+          min-width: calc(100% - 10px);
+          /* max-height: max-content; */
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          font-family: 'Nunito', sans-serif;
+          backdrop-filter: blur(5px);
+          background-color: #80808080;
+          border-radius: 1vmin;
+        }
+
+        & weather-condition::part(condition) {
+          min-height: 20vh;
+          max-height: 20vh;
+          aspect-ratio: 1/1;
+          border-radius: 2vmin;
+        }
+
+        & weather-condition::part(location) {
+          font-size: 6vmin;
+          font-weight: 700;
+        }
+
+        & weather-condition::part(temperature) {
+          font-size: 6vmin;
+          font-weight: 700;
+        }
+        & div#details{
+          width: 100%;
+          display: grid;
+          place-items: center;
+          grid-template-columns: repeat(auto-fill, calc(50% - 2px));
+          grid-auto-rows:  20vh;
+          gap: 4px;
+          overflow: auto;
+          height: calc(40vh + 4px);
+          & icon-tiles::part(container){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 100%;
+            border-radius: min(2vmin ,10px);
+            background-color: #80808080;
+            backdrop-filter: blur(5px);
+          }
+          & icon-tiles::part(icon){
+            min-height: 10vh;
+            max-height: 10vh;
+            border-radius: 1vmin;
+            backdrop-filter: blur(5px);
+            background-color:#80808010;
+          }
+          
+          & icon-tiles::part(heading){
+            line-height: 5vh;
+            font-size: 5vmin;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            overflow: hidden;
+            word-break: keep-all;
+            text-overflow: ellipsis;
+          }
+          & icon-tiles::part(data){
+            line-height: 5vh;
+            font-size: 4vmin;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            overflow: hidden;
+            word-break: keep-all;
+            text-overflow: ellipsis;
+          }
+          & icon-tiles::part(container):hover{
+            background-color: #00000080;
+            transition: all 0.25s linear;
+            transform: scale(0.90);
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 450px){
+  div#details{
+    grid-template-columns: repeat(auto-fill, calc(25% - 3px)) !important;
+    grid-auto-rows:  25vh !important;
+    height: calc(50vh + 4px) !important;
+  }
+  search-bar::part(field){
+    font-size: 5vmin;
+  }
+}
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
