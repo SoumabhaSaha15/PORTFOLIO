@@ -197,7 +197,7 @@ body {
 
       & section[id="my-projects"] {
         display: grid;
-        grid-template-columns: repeat(4, 25%);
+        grid-template-columns: repeat(4, min(320px,100vw));
         grid-auto-rows: 50% 50%;
         place-items: center;
 
