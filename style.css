@@ -19,6 +19,8 @@ body {
     min-height: 100vh;
     overflow: hidden;
     display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 16% repeat(6, 14%);
     grid-template-areas:
       'header header footer footer'
       'main main main main';
@@ -364,7 +366,7 @@ body {
       grid-area: footer;
       background-color: #dbdbdb;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 25%);
+      grid-template-columns: 20% 20% 30% 30%;
       place-items: center;
       line-height: 8vh;
       min-height: 8vh;
