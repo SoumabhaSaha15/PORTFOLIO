@@ -322,7 +322,7 @@ body {
             min-width: 20vw;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             align-items: center;
             background-color: black;
             border: 0 solid #000000;
@@ -340,7 +340,7 @@ body {
               position: relative;
               aspect-ratio: 1/1;
               height: 100%;
-              padding: 2px;
+              margin-left: 10px;
               filter: invert();
               transform-style: preserve-3d;
               transition-duration: 0.75s;
