@@ -20,7 +20,7 @@ body {
     overflow: hidden;
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: 20% 20% 30% 30%;
+    grid-template-columns: 20% 20% 30% 30% !important;
     grid-template-areas:
       'header header footer footer'
       'main main main main';
