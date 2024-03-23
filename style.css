@@ -197,7 +197,8 @@ body {
 
       & section[id="my-projects"] {
         display: grid;
-        grid-template-columns: repeat(4, min(320px,100vw));
+        justify-content:space-evenly;
+        grid-template-columns: repeat(auto-fill, min(320px,100vw));
         grid-auto-rows: 50% 50%;
         place-items: center;
 
@@ -453,7 +454,7 @@ body {
         }
 
         & section[id="my-projects"] {
-          grid-template-columns: repeat(auto-fill, 100%);
+          grid-template-columns: repeat(auto-fill, min(320px,100vh));
         }
 
         & section[id="contact"] {
