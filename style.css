@@ -20,7 +20,7 @@ body {
     overflow: hidden;
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: 16% repeat(6, 14%);
+    grid-template-columns: 20% 20% 30% 30%;
     grid-template-areas:
       'header header footer footer'
       'main main main main';
@@ -394,6 +394,7 @@ body {
 @media only screen and (max-width: 768px) {
   body {
     & div#root {
+      grid-template-columns: 16% repeat(6, 14%);
       grid-template-areas:
         'header footer footer footer footer footer footer'
         'main main main main main main main'
