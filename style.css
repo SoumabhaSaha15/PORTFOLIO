@@ -340,7 +340,7 @@ body {
               position: relative;
               aspect-ratio: 1/1;
               height: 100%;
-              margin-left: 10px;
+              margin-right: 10px;
               filter: invert();
               transform-style: preserve-3d;
               transition-duration: 0.75s;
