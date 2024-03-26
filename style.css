@@ -42,6 +42,9 @@ body {
         width: 8vh;
         padding: 5px;
       }
+      & img:hover {
+        transform:rotate(360deg);
+      }
     }
 
     & main {
