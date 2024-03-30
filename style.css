@@ -203,7 +203,7 @@ body {
       & section[id="my-projects"] {
         display: grid;
         justify-content:space-evenly;
-        grid-template-columns: repeat(auto-fill, min(320px,100vw));
+        grid-template-columns: repeat(auto-fill, min(320px,100%));
         grid-auto-rows: 50% 50%;
         place-items: center;
 
