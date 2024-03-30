@@ -460,7 +460,7 @@ body {
         }
 
         & section[id="my-projects"] {
-          grid-template-columns: repeat(auto-fill, min(320px,100vh));
+          grid-template-columns: repeat(auto-fill, min(320px,100%));
         }
 
         & section[id="contact"] {
