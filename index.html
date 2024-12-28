@@ -29,7 +29,17 @@
             <span class="small-text">hello I am</span>
             <span class="big-text">Soumabha Saha</span>
             <span class="mid-text">Developer</span>
-            <button>get cv</button>
+            <script>
+              function downloadPdf() {
+                  const link = document.createElement('a');
+                  link.href = 'https://drive.google.com/uc?export=download&id=1T7xJ_KN1l6lJIkANvYlqBa2cgkgPB1fo';
+                  link.download = 'file.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+              }
+            </script>
+            <button onclick="downloadPdf()">get cv</button>
             <span class="link">
               <a href="https://github.com/SoumabhaSaha15/">
                 <img src="./assets/github.svg" />
@@ -155,9 +165,7 @@
               placeholder="your email id"
               required=""
             />
-            <textarea name="Message" placeholder="write purpose">
-https://www.dropbox.com/scl/fo/q2vzjhshd2f8nfewqg8yz/AHUz37f5cKdaH0Isixz_W4c?rlkey=fhvjquksoma2is304dj4kcfoz&st=hxo4v469&dl=0
-</textarea>
+            <textarea name="Message" placeholder="write purpose"></textarea>
             <button id="contact-submit">submit</button>
           </form>
           <div class="ending hide">
