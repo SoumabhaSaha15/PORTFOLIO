@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="portfolio, Soumabha Saha, WebDude" />
     <meta name="robots" content="index, follow" />
+    <meta property="og:url" content="https://soumabha-saha15.vercel.app/">
+    <meta property="og:type" content="website">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.c om" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,203 +22,15 @@
     <title>WebDude</title>
   </head>
   <body>
-    <div id="root">
-      <header>
-        <img src="https://avatars.githubusercontent.com/u/108742981?s=400&u=172a54c3f3c857922b6a18e5f5fac72fa6d6fe27&v=4" />
-        <span class="name">WebDude</span>
-      </header>
-      <main>
-        <section id="home">
-          <img src="./assets/image.png" alt="image" class="hide" />
-          <div class="info hide">
-            <span class="small-text">hello I am</span>
-            <span class="big-text">Soumabha Saha</span>
-            <span class="mid-text">Developer</span>
-            <script>
-              function downloadPdf() {
-                  const link = document.createElement('a');
-                  link.href = 'https://drive.google.com/uc?export=download&id=1T7xJ_KN1l6lJIkANvYlqBa2cgkgPB1fo';
-                  link.download = 'file.pdf';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-              }
-            </script>
-            <button onclick="downloadPdf()">get cv</button>
-            <span class="link">
-              <a href="https://github.com/SoumabhaSaha15/">
-                <img src="./assets/github.svg" />
-              </a>
-              <a href="https://www.linkedin.com/in/soumabha-saha-663816253/">
-                <img src="./assets/linkedin.svg" />
-              </a>
-            </span>
-          </div>
-        </section>
-
-        <section id="about">
-
-          <figure class="cirtificate hide">
-            <img
-              src="cirtificate/courserac++.png"
-              alt="C++"
-              data-link="https://www.dropbox.com/scl/fi/8zc946rxiupkz3zogyklc/Coursera_C-_PDF.pdf?rlkey=mfuee3httpiptsh7vq22ome9r&amp;raw=1"
-            />
-            <figcaption>
-              <a
-                href="https://www.dropbox.com/scl/fi/8zc946rxiupkz3zogyklc/Coursera_C-_PDF.pdf?rlkey=mfuee3httpiptsh7vq22ome9r&amp;raw=1"
-                >CourseraC++</a
-              >
-            </figcaption>
-          </figure>
-
-          <figure class="cirtificate hide">
-            <img
-              src="cirtificate/bct.png"
-              alt="django"
-              data-link="https://www.dropbox.com/scl/fi/hg0dntu57npeauue5rjtf/bct.pdf?rlkey=rn3kjgsvu4yx7t7gp1v4ftbas&amp;raw=1"
-            />
-            <figcaption>
-              <a href="https://www.dropbox.com/scl/fi/hg0dntu57npeauue5rjtf/bct.pdf?rlkey=rn3kjgsvu4yx7t7gp1v4ftbas&amp;raw=1"
-                >django-python</a>
-            </figcaption>
-          </figure>
-
-          <figure class="cirtificate hide">
-            <img
-              src="cirtificate/approximation_algo.png"
-              alt="approximation"
-              data-link="https://www.dropbox.com/scl/fi/eh9mifrpbupwmrgkdl28y/Coursera_approximation_algo.pdf?rlkey=ycvdff2anhcd5gmyi4sk7mmuk&amp;raw=1"
-            />
-            <figcaption>
-              <a
-                href="https://www.dropbox.com/scl/fi/eh9mifrpbupwmrgkdl28y/Coursera_approximation_algo.pdf?rlkey=ycvdff2anhcd5gmyi4sk7mmuk&amp;raw=1"
-                >approx-algo</a>
-            </figcaption>
-          </figure>
-          
-          <figure class="cirtificate hide">
-            <img
-              src="cirtificate/IBM_badge.png"
-              alt="IBM badge"
-              data-link="https://www.credly.com/badges/8f154844-1456-49eb-8d7a-85c9169ef58d/public_url"
-            />
-            <figcaption>
-              <a
-                href="https://www.credly.com/badges/8f154844-1456-49eb-8d7a-85c9169ef58d/public_url"
-                >IBM badge</a>
-            </figcaption>
-          </figure>
-          
-        </section>
-        
-        <section id="my-projects">
-          <div class="projects hide">
-            <img
-              src="https://raw.githubusercontent.com/SoumabhaSaha15/PORTFOLIO/main/WebProjects/WebEditor/logo.svg"
-              alt="logo"
-            />
-            <a href="https://web-editor-five.vercel.app" rel="index,follow"
-              >web_editor_app</a
-            >
-            <iframe
-              sandbox
-              src="https://web-editor-five.vercel.app"
-            ></iframe>
-          </div>
-
-          <div class="projects hide">
-            <img
-              src="https://raw.githubusercontent.com/SoumabhaSaha15/bharat_intern/main/WeatherApp/icon.png"
-              alt="logo"
-            />
-            <a href="https://bharat-intern-roan.vercel.app/" rel="index,follow"
-              >weather_app</a
-            >
-            <iframe
-              src="https://bharat-intern-roan.vercel.app/"
-            ></iframe>
-          </div>
-          <div class="projects hide">
-            <img
-              src="https://raw.githubusercontent.com/SoumabhaSaha15/PORTFOLIO/main/WebProjects/Calculator/calculator.svg"
-              alt="logo"
-            />
-            <a
-              href="https://js-calculator-nine-pi.vercel.app"
-              rel="index,follow"
-              >Calculator</a
-            >
-            <iframe
-              sandbox
-              src="https://js-calculator-nine-pi.vercel.app"
-            ></iframe>
-          </div>
-        </section>
-
-        <section id="contact">
-          <form class="hide show" name="submit-to-google-sheet">
-            <input
-              type="text"
-              name="Name"
-              placeholder="your name"
-              required=""
-            />
-            <input
-              type="text"
-              name="Email"
-              placeholder="your email id"
-              required=""
-            />
-            <textarea name="Message" placeholder="write purpose"></textarea>
-            <button id="contact-submit">submit</button>
-          </form>
-          <div class="ending hide">
-            <button>
-              <img src="./assets/facebook.svg" />
-              <a href="https://www.facebook.com/profile.php?id=100073559877285"
-                >facebook</a
-              >
-            </button>
-            <button>
-              <img src="./assets/leetcode.svg" />
-              <a href="https://leetcode.com/SOUMABHA_SAHA/">leetcode</a>
-            </button>
-            <button>
-              <img src="./assets/instagram.svg" />
-              <a href="https://www.instagram.com/webdude1509">instagram</a>
-            </button>
-            <button>
-              <img src="./assets/gmail.svg" />
-              <a href="mailto:soumabhasaha1509@gmail.com">mail</a>
-            </button>
-            <button>
-              <img src="./assets/youtube.svg" />
-              <a href="https://www.youtube.com/@DevDude1509"
-                >youtube</a
-              >
-            </button>
-            <button>
-              <img src="./assets/replit.svg" />
-              <a href="https://replit.com/@SoumabhaSaha/">replit</a>
-            </button>
-            <button>
-              <img src="./assets/x.svg" />
-              <a href="https://twitter.com/SoumabhaSaha15">X.com</a>
-            </button>
-            <button>
-              <img src="./assets/telegram.svg" />
-              <a href="https://t.me/Soumabha_Saha_MERN_DEVLOPER">telegram</a>
-            </button>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <a href="#home" rel="index,follow">HOME</a>
-        <a href="#about" rel="index,follow">ABOUT</a>
-        <a href="#my-projects" rel="index,follow">PROJECTS</a>
-        <a href="#contact" rel="index,follow">CONTACTS</a>
-      </footer>
+    <div class="hero bg-base-200 min-h-screen">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Hello there</h1>
+          <p class="py-6">This portfolio is deprecated</p>
+           <a href="https://soumabha-saha15.vercel.app/" class="btn btn-primary underline">Visit my new portfolio</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+
