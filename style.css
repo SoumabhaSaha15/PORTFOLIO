@@ -1,17 +1,17 @@
 * {
   /* margin: 0; */
   /* padding: 0; */
+  /* box-sizing: border-box; */
   font-family: 'Nunito', sans-serif;
   transition: all 0.25s ease-in-out;
-  /* box-sizing: border-box; */
   scroll-behavior: smooth;
 }
 
-:root {
+/* :root {
   --light-color: #c0c0c0;
-}
+} */
 
-body {
+/* body {
   & div#root {
     max-width: 100%;
     min-width: 100%;
@@ -514,5 +514,6 @@ section[id] .hide {
 section[id] .show {
   opacity: 1;
   transform: scale(1);
-}
+} */
+
 
